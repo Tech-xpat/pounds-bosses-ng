@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MobileNav = () => {
+const MobileNav: React.FC = () => {
   return (
     <nav>Mobile Navigation</nav>
   );
