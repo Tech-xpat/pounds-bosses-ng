@@ -1,15 +1,24 @@
 "use client"
-
+import React from 'react';
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ModeToggle } from "@/components/mode-toggle"
-import { MobileNav } from "@/components/mobile-nav"
+import ModeToggle from '@/components/mode-toggle';
+import MobileNav from '@/components/mobile-nav';
 import { usePathname, useRouter } from "next/navigation"
 
 export function SiteHeader() {
   const pathname = usePathname()
   const router = useRouter()
+const SiteHeader: React.FC = () => {
+  return (
+    <header>
+      <ModeToggle />
+      <MobileNav />
+    </header>
+  );
+};
 
+export default SiteHeader;
   // Don't show header on admin pages
   if (pathname?.startsWith("/admin")) {
     return null
