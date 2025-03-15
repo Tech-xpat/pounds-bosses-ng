@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-    generator: 'v0.dev'
+    generator: 'fb.com/empiredigits'
 }
 
 export default function RootLayout({
