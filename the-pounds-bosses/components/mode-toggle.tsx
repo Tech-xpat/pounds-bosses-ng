@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ModeToggle = () => {
+const ModeToggle: React.FC = () => {
   return (
     <button>Toggle Mode</button>
   );
